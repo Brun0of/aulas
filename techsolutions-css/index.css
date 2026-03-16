@@ -1,0 +1,11 @@
+a{
+    font-size: 70px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
