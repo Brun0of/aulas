@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>BRASIL X FRANÇA AO VIVO 🔥 AMISTOSO INTERNACIONAL 2026 | PRÉ-COPA DO MUNDO! - YouTube</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f0f0f;
+  --surface:#212121;
+  --surface2:#272727;
+  --border:#3f3f3f;
+  --text:#f1f1f1;
+  --muted:#aaaaaa;
+  --red:#ff0000;
+  --blue:#3ea6ff;
+  --hover:#ffffff1a;
+  --sidebar:402px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#555;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#777}
+
+/* ══════════════ HEADER ══════════════ */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  height:56px;background:var(--bg);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 16px;border-bottom:1px solid #ffffff0d;
+}
+.h-left{display:flex;align-items:center;gap:16px}
+.menu-btn,.icon-btn{
+  background:none;border:none;color:var(--text);
+  cursor:pointer;width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s;flex-shrink:0;position:relative
+}
+.menu-btn:hover,.icon-btn:hover{background:var(--hover)}
+.yt-logo{display:flex;align-items:center;gap:0;text-decoration:none;flex-shrink:0}
+.yt-logo-icon{width:34px;height:24px;flex-shrink:0}
+.yt-logo-text{
+  font-size:20px;font-weight:700;color:var(--text);
+  letter-spacing:-0.5px;line-height:1;
+  display:flex;align-items:center;gap:2px
+}
+.yt-logo-br{font-size:9px;font-weight:400;color:var(--muted);align-self:flex-start;margin-top:4px}
+
+.h-center{display:flex;align-items:center;gap:8px;flex:1;max-width:620px;margin:0 auto}
+.search-wrap{
+  display:flex;flex:1;height:40px;
+  border:1px solid var(--border);border-radius:40px;overflow:hidden;
+  background:#121212;
+}
+.search-wrap:focus-within{border-color:var(--blue)}
+.kbd-icon{
+  display:flex;align-items:center;justify-content:center;
+  padding:0 10px;color:var(--muted);flex-shrink:0;border:none;background:none;cursor:pointer
+}
+.kbd-icon span{font-size:18px}
+.search-input{
+  flex:1;border:none;outline:none;background:none;
+  color:var(--text);font-size:16px;font-family:'Roboto',sans-serif;padding:0 8px
+}
+.search-input::placeholder{color:var(--muted)}
+.search-btn{
+  width:64px;border:none;background:var(--surface);
+  color:var(--text);cursor:pointer;border-left:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s;flex-shrink:0
+}
+.search-btn:hover{background:var(--surface2)}
+.mic-btn{
+  width:40px;height:40px;border-radius:50%;border:none;
+  background:var(--surface2);color:var(--text);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s;flex-shrink:0
+}
+.mic-btn:hover{background:#3f3f3f}
+
+.h-right{display:flex;align-items:center;gap:4px}
+.dots-btn{font-size:20px;letter-spacing:1px;background:none;border:none;color:var(--text);cursor:pointer;padding:8px;border-radius:50%;transition:background .15s}
+.dots-btn:hover{background:var(--hover)}
+.signin-btn{
+  display:flex;align-items:center;gap:6px;
+  border:1px solid var(--blue);background:none;color:var(--blue);
+  border-radius:20px;padding:6px 14px;cursor:pointer;font-size:14px;font-weight:500;
+  transition:background .15s;white-space:nowrap
+}
+.signin-btn:hover{background:#3ea6ff22}
+.signin-btn .material-icons{font-size:20px}
+
+/* ══════════════ LAYOUT ══════════════ */
+.page-wrap{
+  display:flex;
+  padding-top:56px;
+  max-width:1280px;
+  margin:0 auto;
+}
+.main-col{flex:1;min-width:0;padding:16px 16px 0 24px}
+.side-col{width:var(--sidebar);flex-shrink:0;padding:16px 16px 0 0}
+
+/* ══════════════ PLAYER ══════════════ */
+.player-container{
+  width:100%;aspect-ratio:16/9;
+  border-radius:0;overflow:hidden;
+  position:relative;background:#000;
+  cursor:pointer;
+}
+
+/* Stadium background */
+.stadium-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 80%, #1a3a1a 0%, #0d1f0d 40%, #050c05 100%);
+  overflow:hidden;
+}
+.stadium-bg::before{
+  content:'';position:absolute;inset:0;
+  background:
+    linear-gradient(0deg,transparent 0%,transparent 40%,rgba(0,0,0,.3) 100%),
+    repeating-linear-gradient(90deg,transparent,transparent 18px,rgba(255,255,255,.015) 18px,rgba(255,255,255,.015) 19px),
+    repeating-linear-gradient(0deg,transparent,transparent 18px,rgba(255,255,255,.015) 18px,rgba(255,255,255,.015) 19px);
+}
+/* Field lines */
+.field-lines{position:absolute;bottom:0;left:0;right:0;height:45%}
+.field-lines svg{width:100%;height:100%}
+
+/* Dark overlay for broadcast feel */
+.broadcast-vignette{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 100% 100% at 50% 0%,transparent 50%,rgba(0,0,0,.5) 100%);
+  pointer-events:none;
+}
+
+/* Player figure */
+.player-figure{
+  position:absolute;
+  bottom:0;left:50%;transform:translateX(-50%);
+  width:55%;height:95%;
+  background:url('https://i.imgur.com/placeholder.png') center/contain no-repeat;
+  display:flex;align-items:flex-end;justify-content:center;
+}
+/* Football player silhouette using CSS */
+.player-silhouette{
+  position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:320px;height:580px;
+  background:
+    radial-gradient(ellipse 60px 55px at 50% 8%, #2a2a2a 100%, transparent 100%),
+    linear-gradient(180deg,transparent 13%,#1a2a4a 13%,#1a2a4a 70%,#0d1a35 70%,#0d1a35 100%);
+  clip-path:polygon(35% 0%,65% 0%,75% 12%,80% 35%,85% 100%,15% 100%,20% 35%,25% 12%);
+  filter:brightness(0.3);
+}
+
+/* ── PLAYER IMAGE (using football-related picsum) ── */
+.main-video-img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;opacity:0.85;
+}
+
+/* ── LIVE BADGE (top left of video area) ── */
+.live-dot{
+  position:absolute;top:12px;left:12px;z-index:10;
+  display:flex;align-items:center;gap:6px;
+  background:rgba(0,0,0,.6);padding:4px 8px;border-radius:4px;
+}
+.live-dot-circle{
+  width:8px;height:8px;border-radius:50%;background:var(--red);
+  animation:pulse-red 1.5s infinite;
+}
+@keyframes pulse-red{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}
+.live-dot-text{font-size:12px;font-weight:700;color:#fff;letter-spacing:1px}
+
+/* ── QR CODE OVERLAY (top left) ── */
+.qr-overlay{
+  position:absolute;top:14px;left:14px;z-index:15;
+  background:#f5c800;border-radius:8px;padding:10px;
+  width:160px;display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+.qr-url{font-size:11px;font-weight:700;color:#000;text-align:center;line-height:1.2}
+.qr-code{width:100px;height:100px;background:#fff;border-radius:4px;padding:4px;position:relative;overflow:hidden}
+.qr-code svg{width:100%;height:100%}
+.qr-msg{font-size:10px;color:#000;text-align:center;font-weight:500;line-height:1.3}
+.qr-insta{
+  display:flex;align-items:center;gap:5px;
+  background:rgba(0,0,0,.6);border-radius:20px;
+  padding:4px 10px;
+}
+.insta-icon{
+  width:18px;height:18px;border-radius:4px;
+  background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0
+}
+.insta-icon svg{width:11px;height:11px;fill:#fff}
+.qr-handle{font-size:12px;color:#fff;font-weight:500}
+
+/* ── WEBCAM FEEDS (top right) ── */
+.webcams{
+  position:absolute;top:12px;right:12px;z-index:15;
+  display:flex;gap:8px;
+}
+.cam-box{
+  width:130px;
+  background:rgba(0,0,0,.7);border-radius:6px;overflow:hidden;
+}
+.cam-feed{
+  width:100%;height:85px;object-fit:cover;display:block;
+  background:#333;
+}
+.cam-name{
+  padding:3px 6px;background:#f5c800;
+  font-size:10px;font-weight:700;color:#000;
+}
+.cam-name span{display:block;font-weight:400;font-size:9px}
+
+/* ── LIVE CHAT (left side) ── */
+.live-chat{
+  position:absolute;bottom:100px;left:14px;z-index:15;
+  width:280px;max-height:200px;overflow:hidden;
+  display:flex;flex-direction:column;gap:3px;
+  mask-image:linear-gradient(to bottom,transparent 0%,black 30%,black 100%);
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 30%,black 100%);
+}
+.chat-msg{
+  display:flex;align-items:flex-start;gap:6px;
+  animation:slideUp .4s ease;
+}
+@keyframes slideUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.chat-badge{
+  width:18px;height:18px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:700;color:#fff;margin-top:1px;
+}
+.chat-text{font-size:12px;line-height:1.4;color:#fff;text-shadow:1px 1px 2px rgba(0,0,0,.9)}
+.chat-user{font-weight:700;margin-right:4px}
+.chat-user.mod{color:#5eb0ff}
+.chat-user.owner{color:#f5c800}
+.chat-user.verified{color:#2ba640}
+
+/* ── SCORE BOARD (bottom) ── */
+.scoreboard{
+  position:absolute;bottom:0;left:0;right:0;z-index:15;
+  background:rgba(0,0,0,.82);
+  backdrop-filter:blur(2px);
+  padding:8px 0 10px;
+}
+.score-title{
+  text-align:center;font-size:11px;color:#ccc;
+  font-weight:500;letter-spacing:2px;text-transform:uppercase;
+  margin-bottom:6px;
+}
+.score-row{
+  display:flex;align-items:center;justify-content:center;gap:0;
+  font-size:22px;font-weight:700;
+}
+.score-team{
+  display:flex;align-items:center;gap:10px;
+  min-width:200px;
+}
+.score-team.left{justify-content:flex-end}
+.score-team.right{justify-content:flex-start}
+.team-name{font-size:16px;font-weight:700;color:#fff;letter-spacing:.5px}
+.team-flag{font-size:22px}
+.score-num{
+  font-size:28px;font-weight:900;color:#fff;
+  width:60px;text-align:center;line-height:1;
+}
+.score-divider{
+  font-size:24px;font-weight:300;color:#888;
+  width:20px;text-align:center;
+}
+.score-venue{
+  text-align:center;font-size:11px;color:#aaa;
+  margin-top:4px;letter-spacing:.5px;
+}
+
+/* ── PLAYER CONTROLS BAR ── */
+.player-controls{
+  position:absolute;bottom:0;left:0;right:0;z-index:20;
+  height:4px;background:rgba(255,255,255,.2);cursor:pointer;
+}
+.progress-fill{height:100%;background:var(--red);width:0%;transition:width .1s}
+.ctrl-bar{
+  position:absolute;bottom:4px;left:0;right:0;z-index:20;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:6px 12px;
+  background:linear-gradient(to top,rgba(0,0,0,.7),transparent);
+  opacity:0;transition:opacity .2s;
+}
+.player-container:hover .ctrl-bar{opacity:1}
+.ctrl-left,.ctrl-right{display:flex;align-items:center;gap:4px}
+.ctrl-btn{
+  background:none;border:none;color:#fff;cursor:pointer;
+  width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;transition:background .15s;
+}
+.ctrl-btn:hover{background:rgba(255,255,255,.2)}
+.ctrl-btn .material-icons{font-size:22px}
+.live-ctrl-badge{
+  background:var(--red);color:#fff;
+  font-size:11px;font-weight:700;padding:2px 6px;
+  border-radius:3px;letter-spacing:.5px;cursor:pointer;
+}
+.vol-slider{width:70px;height:3px;accent-color:#fff;cursor:pointer}
+.time-text{font-size:12px;color:#fff}
+
+/* ══════════════ VIDEO INFO ══════════════ */
+.video-info{padding:12px 0}
+.video-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:12px}
+.video-main-title{
+  font-size:18px;font-weight:700;line-height:1.4;flex:1;
+  cursor:pointer;
+}
+.title-badge{
+  font-size:13px;font-weight:700;
+  background:var(--red);color:#fff;
+  padding:2px 6px;border-radius:3px;
+  white-space:nowrap;align-self:flex-start;margin-top:2px;flex-shrink:0;
+}
+
+/* Channel row */
+.channel-row{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;
+}
+.ch-left{display:flex;align-items:center;gap:12px}
+.ch-avatar{
+  width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;
+}
+.ch-avatar img{width:100%;height:100%;object-fit:cover}
+.ch-info{display:flex;flex-direction:column;gap:1px}
+.ch-name{
+  font-size:15px;font-weight:600;cursor:pointer;
+  display:flex;align-items:center;gap:4px;
+}
+.ch-name:hover{color:var(--muted)}
+.ch-subs{font-size:13px;color:var(--muted)}
+.ch-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+
+.btn-member{
+  background:var(--surface2);border:none;color:var(--text);
+  padding:8px 16px;border-radius:20px;font-size:14px;font-weight:500;
+  cursor:pointer;transition:background .15s;
+}
+.btn-member:hover{background:var(--border)}
+.btn-subscribe{
+  background:var(--text);border:none;color:#0f0f0f;
+  padding:8px 16px;border-radius:20px;font-size:14px;font-weight:700;
+  cursor:pointer;transition:background .15s;
+}
+.btn-subscribe:hover{background:#d0d0d0}
+
+/* Action buttons */
+.actions-row{
+  display:flex;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap;
+}
+.like-group{
+  display:flex;align-items:center;
+  background:var(--surface2);border-radius:20px;overflow:hidden;
+}
+.like-btn,.dislike-btn{
+  display:flex;align-items:center;gap:6px;
+  border:none;background:none;color:var(--text);
+  padding:8px 14px;font-size:14px;font-weight:500;
+  cursor:pointer;transition:background .15s;
+}
+.like-btn:hover,.dislike-btn:hover{background:var(--border)}
+.like-divider{width:1px;background:var(--border);height:24px;align-self:center}
+.dislike-btn .material-icons{font-size:20px}
+.like-btn .material-icons{font-size:20px}
+.action-btn{
+  display:flex;align-items:center;gap:6px;
+  border:none;background:var(--surface2);color:var(--text);
+  padding:8px 14px;border-radius:20px;font-size:14px;font-weight:500;
+  cursor:pointer;transition:background .15s;
+}
+.action-btn:hover{background:var(--border)}
+.action-btn .material-icons{font-size:20px}
+.more-action-btn{
+  background:var(--surface2);border:none;color:var(--text);
+  width:36px;height:36px;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s;
+}
+.more-action-btn:hover{background:var(--border)}
+
+/* ══════════════ SIDEBAR ══════════════ */
+.side-col{display:flex;flex-direction:column;gap:0}
+
+/* Ad */
+.ad-card{
+  background:#f5c800;border-radius:10px;overflow:hidden;
+  margin-bottom:12px;cursor:pointer;position:relative;
+  transition:filter .2s;
+}
+.ad-card:hover{filter:brightness(.95)}
+.ad-banner-img{
+  width:100%;height:100px;object-fit:cover;display:block;
+  background:linear-gradient(135deg,#f5c800,#ff9500);
+}
+.ad-banner-inner{
+  width:100%;height:100px;
+  background:linear-gradient(135deg,#ffd700 0%,#f5c800 40%,#ff9500 100%);
+  display:flex;align-items:center;justify-content:space-around;padding:10px;
+  position:relative;
+}
+.ad-left{display:flex;flex-direction:column;gap:4px}
+.ad-rating{display:flex;align-items:center;gap:4px}
+.ad-stars{font-size:14px;color:#000}
+.ad-rating-num{font-size:22px;font-weight:900;color:#000}
+.ad-discount{font-size:10px;color:#000;font-weight:600;background:rgba(0,0,0,.1);padding:2px 6px;border-radius:4px}
+.ad-person{
+  width:80px;height:90px;object-fit:cover;border-radius:4px;
+  background:#e6ab00;display:flex;align-items:flex-end;overflow:hidden
+}
+.ad-person-placeholder{
+  width:70px;height:90px;
+  background:linear-gradient(180deg,transparent 50%,#e6ab00 100%);
+  position:relative;
+}
+.ad-channel-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:8px 10px;background:#fff;
+}
+.ad-ch-info{display:flex;align-items:center;gap:8px}
+.ad-ch-avatar{
+  width:28px;height:28px;border-radius:50%;overflow:hidden;flex-shrink:0;
+  background:#f5c800;display:flex;align-items:center;justify-content:center;
+}
+.ad-ch-avatar img{width:100%;height:100%;object-fit:cover}
+.ad-ch-name-wrap{display:flex;flex-direction:column;gap:1px}
+.ad-ch-name{font-size:13px;font-weight:600;color:#0f0f0f}
+.ad-sponsored{font-size:11px;color:#606060}
+.ad-url{font-size:11px;color:#606060}
+.saiba-mais-btn{
+  border:1px solid #606060;background:none;color:#0f0f0f;
+  padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500;
+  cursor:pointer;transition:background .15s;
+}
+.saiba-mais-btn:hover{background:#f0f0f0}
+.ad-more-btn{background:none;border:none;color:#606060;cursor:pointer;padding:4px}
+
+/* Related videos */
+.rel-video{
+  display:flex;gap:8px;padding:6px 0;cursor:pointer;
+  border-radius:8px;transition:background .15s;
+}
+.rel-video:hover{background:var(--hover)}
+.rel-thumb{
+  position:relative;width:168px;height:94px;flex-shrink:0;
+  border-radius:8px;overflow:hidden;background:var(--surface);
+}
+.rel-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.rel-duration{
+  position:absolute;bottom:4px;right:4px;
+  background:rgba(0,0,0,.85);color:#fff;
+  font-size:11px;font-weight:500;padding:2px 5px;border-radius:3px;
+}
+.rel-live-badge{
+  position:absolute;bottom:4px;right:4px;
+  background:var(--red);color:#fff;
+  font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;letter-spacing:.5px;
+}
+.rel-watching{
+  position:absolute;bottom:4px;left:4px;
+  background:rgba(0,0,0,.75);color:#fff;
+  font-size:10px;padding:2px 5px;border-radius:3px;
+  display:flex;align-items:center;gap:3px;
+}
+
+.rel-ch{display:flex;align-items:center;gap:4px;margin-top:2px}
+.rel-ch-name{font-size:12px;color:var(--muted)}
+.verified-icon{
+  width:14px;height:14px;
+  background:var(--muted);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.verified-icon .material-icons{font-size:10px;color:#0f0f0f}
+.rel-stats{font-size:12px;color:var(--muted)}
+.rel-new{
+  display:inline-block;background:var(--surface2);color:var(--text);
+  font-size:11px;padding:1px 6px;border-radius:3px;margin-top:2px;width:fit-content;
+}
+.rel-more-btn{
+  background:none;border:none;color:var(--muted);cursor:pointer;
+  padding:4px;align-self:flex-start;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transition:opacity .15s;flex-shrink:0;
+}
+.rel-video:hover .rel-more-btn{opacity:1}
+.rel-more-btn:hover{background:var(--hover);color:var(--text)}
+
+/* ══════════════ CHAT ANIMATION ══════════════ */
+@keyframes chatIn{
+  from{opacity:0;transform:translateY(6px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.chat-msg{animation:chatIn .35s ease forwards}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════ HEADER ══════════════════════ -->
+<header>
+  <div class="h-left">
+    <button class="menu-btn"><span class="material-icons">menu</span></button>
+    <a href="#" class="yt-logo">
+      <svg class="yt-logo-icon" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="34" height="24" rx="5" fill="#FF0000"/>
+        <polygon points="13,7 24,12 13,17" fill="white"/>
+      </svg>
+      <span class="yt-logo-text">YouTube<span class="yt-logo-br">BR</span></span>
+    </a>
+  </div>
+
+  <div class="h-center">
+    <div class="search-wrap">
+      <button class="kbd-icon" title="Atalho de pesquisa">
+        <span class="material-icons" style="font-size:18px">keyboard</span>
+      </button>
+      <input class="search-input" type="text" placeholder="Pesquisar" value="brasil x frança ao vivo"/>
+    </div>
+    <button class="search-btn" title="Pesquisar">
+      <span class="material-icons">search</span>
+    </button>
+    <button class="mic-btn" title="Pesquisa por voz">
+      <span class="material-icons">mic</span>
+    </button>
+  </div>
+
+  <div class="h-right">
+    <button class="icon-btn"><span class="material-icons" style="font-size:20px">more_vert</span></button>
+    <button class="signin-btn">
+      <span class="material-icons">account_circle</span>
+      Fazer login
+    </button>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <div class="main-col">
+
+
+    <div class="player-container" id="player">
+
+
+      <!-- Main video image -->
+      <img class="main-video-img"
+           src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=900&q=80"
+           alt="Brasil x França ao vivo"
+           onerror="this.src='https://picsum.photos/seed/football88/900/506'"/>
+
+      <div class="broadcast-vignette"></div>
+
+      <!-- QR OVERLAY -->
+      <div class="qr-overlay">
+        <span class="qr-url">livepix.gg/mapatatico</span>
+        <!-- QR Code SVG pattern -->
+        <div class="qr-code">
+          <svg viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+            <!-- QR code pattern (simplified) -->
+            <rect width="21" height="21" fill="white"/>
+            <!-- Top-left finder -->
+            <rect x="1" y="1" width="7" height="7" fill="black"/>
+            <rect x="2" y="2" width="5" height="5" fill="white"/>
+            <rect x="3" y="3" width="3" height="3" fill="black"/>
+            <!-- Top-right finder -->
+            <rect x="13" y="1" width="7" height="7" fill="black"/>
+            <rect x="14" y="2" width="5" height="5" fill="white"/>
+            <rect x="15" y="3" width="3" height="3" fill="black"/>
+            <!-- Bottom-left finder -->
+            <rect x="1" y="13" width="7" height="7" fill="black"/>
+            <rect x="2" y="14" width="5" height="5" fill="white"/>
+            <rect x="3" y="15" width="3" height="3" fill="black"/>
+            <!-- Data dots -->
+            <rect x="9" y="1" width="1" height="1" fill="black"/>
+            <rect x="11" y="1" width="1" height="1" fill="black"/>
+            <rect x="9" y="3" width="2" height="1" fill="black"/>
+            <rect x="9" y="5" width="1" height="1" fill="black"/>
+            <rect x="11" y="5" width="1" height="1" fill="black"/>
+            <rect x="1" y="9" width="1" height="1" fill="black"/>
+            <rect x="3" y="9" width="2" height="1" fill="black"/>
+            <rect x="6" y="9" width="1" height="1" fill="black"/>
+            <rect x="9" y="9" width="1" height="1" fill="black"/>
+            <rect x="11" y="9" width="1" height="1" fill="black"/>
+            <rect x="13" y="9" width="2" height="1" fill="black"/>
+            <rect x="16" y="9" width="1" height="1" fill="black"/>
+            <rect x="18" y="9" width="1" height="1" fill="black"/>
+            <rect x="1" y="11" width="2" height="1" fill="black"/>
+            <rect x="5" y="11" width="1" height="1" fill="black"/>
+            <rect x="7" y="11" width="1" height="1" fill="black"/>
+            <rect x="9" y="11" width="1" height="1" fill="black"/>
+            <rect x="11" y="11" width="2" height="1" fill="black"/>
+            <rect x="15" y="11" width="1" height="1" fill="black"/>
+            <rect x="17" y="11" width="1" height="1" fill="black"/>
+            <rect x="9" y="13" width="1" height="1" fill="black"/>
+            <rect x="11" y="13" width="1" height="1" fill="black"/>
+            <rect x="13" y="13" width="1" height="1" fill="black"/>
+            <rect x="9" y="15" width="2" height="1" fill="black"/>
+            <rect x="13" y="15" width="1" height="1" fill="black"/>
+            <rect x="15" y="15" width="2" height="1" fill="black"/>
+            <rect x="9" y="17" width="1" height="1" fill="black"/>
+            <rect x="11" y="17" width="1" height="1" fill="black"/>
+            <rect x="14" y="17" width="1" height="1" fill="black"/>
+            <rect x="17" y="17" width="1" height="1" fill="black"/>
+            <rect x="9" y="19" width="2" height="1" fill="black"/>
+            <rect x="13" y="19" width="1" height="1" fill="black"/>
+            <rect x="16" y="19" width="1" height="1" fill="black"/>
+          </svg>
+        </div>
+        <span class="qr-msg">envie sua mensagem na<br/>live via pix!</span>
+      </div>
+
+      <!-- Instagram handle -->
+      <div class="qr-insta" style="position:absolute;top:195px;left:14px;z-index:15">
+        <div class="insta-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="white" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </div>
+        <span class="qr-handle">@mapa_tatico</span>
+      </div>
+
+      <!-- WEBCAM FEEDS -->
+      <div class="webcams">
+        <div class="cam-box">
+          <img class="cam-feed" src="https://i.pravatar.cc/130x85?img=53" alt="Arthur Luhr"
+               onerror="this.src='https://picsum.photos/seed/arthur/130/85'"/>
+          <div class="cam-name">Arthur<span>Luhr</span></div>
+        </div>
+        <div class="cam-box">
+          <img class="cam-feed" src="https://i.pravatar.cc/130x85?img=11" alt="Victor Rodrigues"
+               onerror="this.src='https://picsum.photos/seed/victor/130/85'"/>
+          <div class="cam-name">Victor<span>Rodrigues</span></div>
+        </div>
+      </div>
+
+      <!-- LIVE CHAT MESSAGES -->
+      <div class="live-chat" id="chatBox">
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#888">P</div>
+          <div class="chat-text"><span class="chat-user">@PRIME_standoff-1-y5m:</span> Ho otan nino bolyabdl</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#4a90d9">i</div>
+          <div class="chat-text"><span class="chat-user">@icaro123-rt1:</span> com o neymar agente ganha</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#2ba640">A</div>
+          <div class="chat-text"><span class="chat-user">@adenirsiqueira5146:</span> alguém tá sabendo você será o novo uniforme da seleção que vai ser jogado hoje ou não</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#2ba640">A</div>
+          <div class="chat-text"><span class="chat-user">@adenirsiqueira5146:</span> Alguém sabe se o Brasil vai jogar com novo uniforme da seleção</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#f5c800">MT</div>
+          <div class="chat-text"><span class="chat-user owner">@MapaTatico:</span> vai jogar com uniforme novo sim Adenir</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#5eb0ff">T</div>
+          <div class="chat-text"><span class="chat-user">@Tek2368-s4b:</span> 👍</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#e91e63">V</div>
+          <div class="chat-text"><span class="chat-user">@VictorGavril-pe1th:</span> voltei</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#9c27b0">M</div>
+          <div class="chat-text"><span class="chat-user">@Mahezu5:</span> sim</div>
+        </div>
+        <div class="chat-msg">
+          <div class="chat-badge" style="background:#e91e63">V</div>
+          <div class="chat-text"><span class="chat-user">@VictorGavril-pe1th:</span> 🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷</div>
+        </div>
+      </div>
+
+      <!-- SCOREBOARD -->
+      <div class="scoreboard">
+        <div class="score-title">Amistoso Internacional</div>
+        <div class="score-row">
+          <div class="score-team left">
+            <span class="team-name">BRASIL</span>
+            <span class="team-flag">🇧🇷</span>
+          </div>
+          <span class="score-num" id="score1">0</span>
+          <span class="score-divider">&nbsp;</span>
+          <span class="score-num" id="score2">0</span>
+          <div class="score-team right">
+            <span class="team-flag">🇫🇷</span>
+            <span class="team-name">FRANÇA</span>
+          </div>
+        </div>
+        <div class="score-venue">Gillette Stadium – Boston (EUA)</div>
+      </div>
+
+      <!-- CONTROLS BAR (shows on hover) -->
+      <div class="player-controls"><div class="progress-fill" id="pbar"></div></div>
+      <div class="ctrl-bar">
+        <div class="ctrl-left">
+          <button class="ctrl-btn"><span class="material-icons">play_arrow</span></button>
+          <button class="ctrl-btn"><span class="material-icons">skip_next</span></button>
+          <button class="ctrl-btn"><span class="material-icons">volume_up</span></button>
+          <input type="range" class="vol-slider" value="80" min="0" max="100"/>
+          <span class="live-ctrl-badge">● AO VIVO</span>
+        </div>
+        <div class="ctrl-right">
+          <button class="ctrl-btn"><span class="material-icons">subtitles</span></button>
+          <button class="ctrl-btn"><span class="material-icons">settings</span></button>
+          <button class="ctrl-btn"><span class="material-icons">picture_in_picture_alt</span></button>
+          <button class="ctrl-btn"><span class="material-icons">fullscreen</span></button>
+        </div>
+      </div>
+    </div><!-- /player -->
+
+    <!-- ── VIDEO INFO ── -->
+    <div class="video-info">
+      <div class="video-title-row">
+        <h1 class="video-main-title">🏆 BRASIL X FRANÇA AO VIVO 🔥 AMISTOSO INTERNACIONAL 2026 | PRÉ-COPA DO MUNDO!</h1>
+      </div>
+
+      <div class="channel-row">
+        <div class="ch-left">
+          <div class="ch-avatar">
+            <img src="https://i.pravatar.cc/40?img=55" alt="Mapa Tático"
+                 onerror="this.src='https://picsum.photos/seed/mapatatico/40/40'"/>
+          </div>
+          <div class="ch-info">
+            <div class="ch-name">
+              Mapa Tático
+              <span class="verified-icon"><span class="material-icons">check</span></span>
+            </div>
+            <div class="ch-subs">36,1 mil inscritos</div>
+          </div>
+        </div>
+        <div class="ch-right">
+          <button class="btn-member">Seja membro</button>
+          <button class="btn-subscribe">Inscrever-se</button>
+        </div>
+      </div>
+
+      <div class="actions-row">
+        <div class="like-group">
+          <button class="like-btn" id="likeBtn">
+            <span class="material-icons">thumb_up</span>
+            924
+          </button>
+          <div class="like-divider"></div>
+          <button class="dislike-btn">
+            <span class="material-icons">thumb_down</span>
+          </button>
+        </div>
+        <button class="action-btn">
+          <span class="material-icons">reply</span>
+          Compartilhar
+        </button>
+        <button class="action-btn">
+          <span class="material-icons">bookmark_border</span>
+          Salvar
+        </button>
+        <button class="more-action-btn">
+          <span class="material-icons">more_horiz</span>
+        </button>
+      </div>
+    </div>
+
+  </div><!-- /main-col -->
+
+  <!-- ── SIDEBAR ── -->
+  <div class="side-col">
+
+    <!-- AD: Mercado Livre -->
+    <div class="ad-card">
+      <div class="ad-banner-inner">
+        <div class="ad-left">
+          <div class="ad-rating">
+            <span class="ad-rating-num">4.4</span>
+          </div>
+          <div style="font-size:16px;color:#000">⭐⭐⭐⭐</div>
+          <div class="ad-discount">ATÉ 70% OFF</div>
+          <div style="font-size:9px;color:#333;font-weight:600;margin-top:2px">DAS MELHORES MARCAS</div>
+        </div>
+        <div style="position:relative;width:90px;height:90px">
+          <img src="https://i.pravatar.cc/90?img=47" alt="Promoção"
+               style="width:90px;height:90px;object-fit:cover;border-radius:6px"
+               onerror="this.style.background='#e6ab00'"/>
+        </div>
+      </div>
+      <div class="ad-channel-row">
+        <div class="ad-ch-info">
+          <div class="ad-ch-avatar">
+            <img src="https://i.pravatar.cc/28?img=62" alt="Mercado Livre"
+                 onerror="this.style.background='#f5c800'"/>
+          </div>
+          <div class="ad-ch-name-wrap">
+            <span class="ad-ch-name">Mercado Livre Brasil</span>
+            <span class="ad-sponsored">Patrocinado · mercadolivre.c...</span>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:4px">
+          <button class="saiba-mais-btn">Saiba mais</button>
+          <button class="ad-more-btn"><span class="material-icons" style="font-size:18px">more_vert</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RELATED VIDEO 1 — AO VIVO -->
+    <div class="rel-video">
+      <div class="rel-thumb">
+        <img src="https://images.unsplash.com/photo-1550881100-f37c38c6b16e?w=336&q=80" alt="BRASIL X FRANÇA AO VIVO"
+             onerror="this.src='https://picsum.photos/seed/bra1/168/94'"/>
+        <div class="rel-live-badge">● AO VIVO</div>
+        <div class="rel-watching">
+          <div class="watching-dot"></div>
+          194 mil assistindo
+        </div>
+      </div>
+      <div class="rel-meta">
+        <div class="rel-title">BRASIL X FRANÇA | AO VIVO E COM IMAGENS | AMISTOSO...</div>
+        <div class="rel-ch">
+          <span class="rel-ch-name">ge tv</span>
+          <div class="verified-icon"><span class="material-icons">check</span></div>
+        </div>
+        <div class="rel-stats">194 mil assistindo agora</div>
+      </div>
+      <button class="rel-more-btn"><span class="material-icons" style="font-size:18px">more_vert</span></button>
+    </div>
+
+    <!-- RELATED VIDEO 2 -->
+    <div class="rel-video">
+      <div class="rel-thumb">
+        <img src="https://images.unsplash.com/photo-1593351415075-3bac9f45c877?w=336&q=80" alt="A Crítica"
+             onerror="this.src='https://picsum.photos/seed/critica2/168/94'"/>
+        <div class="rel-duration">57:30</div>
+      </div>
+      <div class="rel-meta">
+        <div class="rel-title">A CRÍTICA BRASIL | AO VIVO | 25/03/2026</div>
+        <div class="rel-ch">
+          <span class="rel-ch-name">TV A Crítica</span>
+          <div class="verified-icon"><span class="material-icons">check</span></div>
+        </div>
+        <div class="rel-stats">843 visualizações · Transmitido há 17 h</div>
+        <span class="rel-new">Novo</span>
+      </div>
+      <button class="rel-more-btn"><span class="material-icons" style="font-size:18px">more_vert</span></button>
+    </div>
+
+    <!-- RELATED VIDEO 3 -->
+    <div class="rel-video">
+      <div class="rel-thumb">
+        <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=336&q=80" alt="França 1x3 Brasil"
+             onerror="this.src='https://picsum.photos/seed/fra3/168/94'"/>
+        <div class="rel-duration">59:35</div>
+        <!-- Flag accent -->
+        <div style="position:absolute;top:4px;left:4px;display:flex;gap:2px">
+          <span style="font-size:14px">🇫🇷</span>
+          <span style="font-size:11px;background:rgba(0,0,0,.7);color:#fff;border-radius:3px;padding:1px 4px;font-weight:700">1:3</span>
+          <span style="font-size:14px">🇧🇷</span>
+        </div>
+      </div>
+      <div class="rel-meta">
+        <div class="rel-title">FRANÇA 1 X 3 BRASIL | AMISTOSO INTERNACIONAL...</div>
+        <div class="rel-ch">
+          <span class="rel-ch-name">ge tv</span>
+          <div class="verified-icon"><span class="material-icons">check</span></div>
+        </div>
+        <div class="rel-stats">44 mil visualizações · há 1 hora</div>
+        <span class="rel-new">Novo</span>
+      </div>
+      <button class="rel-more-btn"><span class="material-icons" style="font-size:18px">more_vert</span></button>
+    </div>
+
+    <!-- RELATED VIDEO 4 -->
+    <div class="rel-video">
+      <div class="rel-thumb">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=336&q=80" alt="Cerco de Jericó"
+             onerror="this.src='https://picsum.photos/seed/jerico4/168/94'"/>
+        <div class="rel-duration">1:24:16</div>
+      </div>
+      <div class="rel-meta">
+        <div class="rel-title">25/mar/25 · Cerco de Jericó "A conversão precisa se tornar...</div>
+        <div class="rel-ch">
+          <span class="rel-ch-name">Paróquia São José Operário</span>
+        </div>
+        <div class="rel-stats">149 visualizações · Transmitido há 18 h</div>
+        <span class="rel-new">Novo</span>
+      </div>
+      <button class="rel-more-btn"><span class="material-icons" style="font-size:18px">more_vert</span></button>
+    </div>
+
+    <!-- RELATED VIDEO 5 -->
+    <div class="rel-video">
+      <div class="rel-thumb">
+        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=336&q=80" alt="Corinthians"
+             onerror="this.src='https://picsum.photos/seed/timao5/168/94'"/>
+        <div class="rel-duration">18:42</div>
+      </div>
+      <div class="rel-meta">
+        <div class="rel-title">CORINTHIANS FAZ ESTUDO FINANCEIRO POR ATACANTE |...</div>
+        <div class="rel-ch">
+          <span class="rel-ch-name">Meu Timão</span>
+          <div class="verified-icon"><span class="material-icons">check</span></div>
+        </div>
+        <div class="rel-stats">5,2 mil visualizações · há 2 horas</div>
+        <span class="rel-new">Novo</span>
+      </div>
+      <button class="rel-more-btn"><span class="material-icons" style="font-size:18px">more_vert</span></button>
+    </div>
+
+    <!-- RELATED VIDEO 6 -->
+    <div class="rel-video">
+      <div class="rel-thumb">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=336&q=80" alt="Video extra"
+             onerror="this.src='https://picsum.photos/seed/extra6/168/94'"/>
+        <div class="rel-duration">31:08</div>
+      </div>
+      <div class="rel-meta">
+        <div class="rel-title">PRÉ-JOGO: Tudo sobre Brasil x França no Gillette Stadium</div>
+        <div class="rel-ch">
+          <span class="rel-ch-name">ESPN Brasil</span>
+          <div class="verified-icon"><span class="material-icons">check</span></div>
+        </div>
+        <div class="rel-stats">22 mil visualizações · há 4 horas</div>
+        <span class="rel-new">Novo</span>
+      </div>
+      <button class="rel-more-btn"><span class="material-icons" style="font-size:18px">more_vert</span></button>
+    </div>
+
+  </div><!-- /side-col -->
+
+</div><!-- /page-wrap -->
+
+<script>
+// ── Like button toggle
+let liked = false;
+const likeBtn = document.getElementById('likeBtn');
+likeBtn.addEventListener('click', () => {
+  liked = !liked;
+  likeBtn.querySelector('.material-icons').style.color = liked ? '#3ea6ff' : '';
+  const num = liked ? 925 : 924;
+  likeBtn.childNodes[2].textContent = num;
+});
+
+// ── Animate chat messages continuously
+const chatMessages = [
+  {color:'#4caf50', initial:'G', user:'@GabrielSilva22:', text:'VAMOOOOO BRASIL 🇧🇷🇧🇷🇧🇷'},
+  {color:'#2196f3', initial:'R', user:'@Rafael_BR:', text:'precisa fazer gol logo'},
+  {color:'#ff5722', initial:'C', user:'@Caio_futebol:', text:'Neymar cadê vc 😭'},
+  {color:'#9c27b0', initial:'L', user:'@Lucas01:', text:'tô assistindo do aeroporto kkkk'},
+  {color:'#f44336', initial:'M', user:'@MarceloCTG:', text:'esse árbitro tá de sacanagem'},
+  {color:'#00bcd4', initial:'A', user:'@AndreRJ:', text:'CHUTAAAAA'},
+  {color:'#ff9800', initial:'T', user:'@Thiago_SP:', text:'vamo Brasil vamo vamo 🔥'},
+  {color:'#795548', initial:'B', user:'@Bruno_SC:', text:'assistindo com o pai aqui, emocionante'},
+  {color:'#607d8b', initial:'F', user:'@Felipe_GO:', text:'que jogo nervoso'},
+  {color:'#e91e63', initial:'J', user:'@Joao_BH:', text:'💪💪💪'},
+];
+let chatIdx = 0;
+const chatBox = document.getElementById('chatBox');
+
+function addChatMsg() {
+  const msg = chatMessages[chatIdx % chatMessages.length];
+  const div = document.createElement('div');
+  div.className = 'chat-msg';
+  div.innerHTML = `
+    <div class="chat-badge" style="background:${msg.color}">${msg.initial}</div>
+    <div class="chat-text"><span class="chat-user">${msg.user}</span> ${msg.text}</div>
+  `;
+  chatBox.appendChild(div);
+  // Keep max 10 messages
+  while(chatBox.children.length > 10){
+    chatBox.removeChild(chatBox.firstChild);
+  }
+  chatIdx++;
+}
+setInterval(addChatMsg, 2800);
+
+// ── Chip interaction
+document.querySelectorAll('.chip').forEach(c => {
+  c.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(x => x.classList.remove('active'));
+    c.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
